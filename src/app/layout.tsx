@@ -61,12 +61,12 @@ export const metadata: Metadata = {
       {
         rel: "icon",
         type: "image/svg+xml",
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='50' font-size='48' fill='%23ffffff' text-anchor='middle' dy='.35em' font-family='Poppins, sans-serif' font-weight='700'%3ESG%3C/text%3E%3C/svg%3E",
+        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='50' font-size='68' fill='%23ffffff' text-anchor='middle' dy='.35em' font-family='Poppins, sans-serif' %3ESG%3C/text%3E%3C/svg%3E",
       },
     ],
     shortcut: [
       {
-        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='50' font-size='48' fill='%23ffffff' text-anchor='middle' dy='.35em' font-family='Poppins, sans-serif' font-weight='700'%3ESG%3C/text%3E%3C/svg%3E",
+        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='50' font-size='68' fill='%23ffffff' text-anchor='middle' dy='.35em' font-family='Poppins, sans-serif' %3ESG%3C/text%3E%3C/svg%3E",
       },
     ],
   },
