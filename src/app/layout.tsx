@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Sooraj Gupta — Full Stack Engineer",
     description:
-      "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack. Open to remote and relocation.",
+      "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
     url: "https://s54a.in",
     siteName: "Sooraj Gupta Portfolio",
     locale: "en_US",
