@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import { StructuredData } from "./structured-data";
 
 export const metadata: Metadata = {
   title: {
@@ -19,8 +20,11 @@ export const metadata: Metadata = {
     "MERN Stack Developer",
     "Web Developer India",
     "Remote Developer",
+    "React Developer",
+    "Node.js Developer",
+    "MongoDB Developer",
   ],
-  authors: [{ name: "Sooraj Gupta" }],
+  authors: [{ name: "Sooraj Gupta", url: "https://s54a.in" }],
   creator: "Sooraj Gupta",
 
   openGraph: {
@@ -30,12 +34,14 @@ export const metadata: Metadata = {
       "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack. Open to remote and relocation.",
     url: "https://s54a.in",
     siteName: "Sooraj Gupta Portfolio",
+    locale: "en_US",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Sooraj Gupta Portfolio",
+        type: "image/png",
       },
     ],
   },
@@ -47,6 +53,7 @@ export const metadata: Metadata = {
       "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
     creator: "@s54a__",
     images: ["/og.png"],
+    site: "@s54a__",
   },
 
   icons: {
@@ -67,7 +74,22 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
+
+  alternates: {
+    canonical: "https://s54a.in",
+  },
+
+  // verification: {
+  //   google: "your-google-verification-code", // TODO: Replace with actual Google verification code
+  // },
 };
 
 const geist = Geist({
@@ -81,6 +103,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.variable} suppressHydrationWarning>
       <head>
+        <StructuredData />
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
