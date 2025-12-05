@@ -7,7 +7,7 @@ import { StructuredData } from "./structured-data";
 
 export const metadata: Metadata = {
   title: {
-    default: "Sooraj Gupta — Full Stack Engineer",
+    default: "Sooraj Gupta - Full Stack Engineer",
     template: "%s | Sooraj Gupta",
   },
   description:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    title: "Sooraj Gupta — Full Stack Engineer",
+    title: "Sooraj Gupta - Full Stack Engineer",
     description:
       "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
     url: "https://s54a.in",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sooraj Gupta — Full Stack Engineer",
+    title: "Sooraj Gupta - Full Stack Engineer",
     description:
       "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
     creator: "@s54a__",

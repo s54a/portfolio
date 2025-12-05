@@ -222,7 +222,7 @@ export default function HomePage() {
               </div>
               <p className="max-w-xl text-sm text-slate-700 md:text-base dark:text-slate-300">
                 I build production-grade web applications with clean, scalable
-                architectures—from CRM and billing platforms to membership
+                architectures-from CRM and billing platforms to membership
                 systems and e-commerce, with a focus on performance, DX, and
                 maintainability.
               </p>
