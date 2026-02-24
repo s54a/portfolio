@@ -10,6 +10,7 @@ import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
+import { CreditsSection } from "@/components/CreditsSection";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -143,6 +144,11 @@ export default function Page() {
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
+        </BlurFade>
+      </section>
+      <section id="credit">
+        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <CreditsSection />
         </BlurFade>
       </section>
     </main>

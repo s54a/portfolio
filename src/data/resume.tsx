@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full Stack Engineer specializing in Next.js, TypeScript, and scalable backend systems. Experienced in building production-ready web applications.",
   summary:
-    "Full Stack Engineer with hands-on experience building and deploying end-to-end web applications using Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.\n\nStrong background in API design, authentication (JWT, RBAC, OTP), performance optimization, and scalable architecture. I’ve developed CRM systems, CMS platforms, billing/invoicing tools, and role-based dashboards for real-world business use cases.\n\nComfortable owning features from requirements to deployment, writing clean and maintainable code, and collaborating in fast-paced product environments.",
+    "Full Stack Engineer with hands-on experience building and deploying end-to-end web applications using Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.\n\nStrong background in API design, authentication (JWT, RBAC, OTP), payment gateway integration (Razorpay), performance optimization, and scalable system architecture. I’ve built CRM platforms, CMS systems, billing and invoicing tools, eCommerce solutions, and role-based dashboards handling real business transactions.\n\nExperienced in designing secure payment workflows, webhook handling, data migrations at scale, and deploying production systems on cloud infrastructure. Comfortable owning features from requirements to deployment in fast-paced product environments.",
   avatarUrl: "/me.png",
   skills: [
     { name: "Next.js" },
