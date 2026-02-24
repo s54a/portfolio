@@ -1,59 +1,79 @@
-import "~/styles/globals.css";
-
-import { type Metadata } from "next";
-import { Geist } from "next/font/google";
-import Script from "next/script";
+import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { DATA } from "@/data/resume";
+import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { StructuredData } from "./structured-data";
+import Script from "next/script";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600", "700"],
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL(DATA.url),
+
   title: {
-    default: "Sooraj Gupta - Full Stack Engineer",
-    template: "%s | Sooraj Gupta",
+    default: DATA.name,
+    template: `%s | ${DATA.name}`,
   },
-  description:
-    "I am a Full Stack Engineer specializing in Next.js, TypeScript, and the MERN stack. Building scalable, production-grade web applications.",
+
+  description: DATA.description,
+
   keywords: [
     "Sooraj Gupta",
     "Full Stack Engineer",
     "Next.js Developer",
     "TypeScript Developer",
-    "MERN Stack Developer",
-    "Web Developer India",
-    "Remote Developer",
     "React Developer",
     "Node.js Developer",
-    "MongoDB Developer",
+    "MERN Stack Developer",
+    "Web Developer India",
   ],
-  authors: [{ name: "Sooraj Gupta", url: "https://s54a.in" }],
+
+  authors: [{ name: "Sooraj Gupta", url: DATA.url }],
+
   creator: "Sooraj Gupta",
 
   openGraph: {
-    type: "website",
-    title: "Sooraj Gupta - Full Stack Engineer",
-    description:
-      "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
-    url: "https://s54a.in",
-    siteName: "Sooraj Gupta Portfolio",
+    title: `${DATA.name}`,
+    description: DATA.description,
+    url: DATA.url,
+    siteName: `${DATA.name}`,
     locale: "en_US",
+    type: "website",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Sooraj Gupta Portfolio",
-        type: "image/png",
+        alt: `${DATA.name} Portfolio`,
       },
     ],
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Sooraj Gupta - Full Stack Engineer",
-    description:
-      "Full Stack Engineer specializing in Next.js, TypeScript, and MERN stack.",
-    creator: "@s54a__",
-    images: ["/og.png"],
-    site: "@s54a__",
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: DATA.name,
+  //   description: DATA.description,
+  //   images: ["/og.png"],
+  //   creator: "@s54a__",
+  // },
+
+  alternates: {
+    canonical: DATA.url,
   },
 
   icons: {
@@ -77,31 +97,28 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
       "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-
-  alternates: {
-    canonical: "https://s54a.in",
+  twitter: {
+    title: `${DATA.name}`,
+    card: "summary_large_image",
   },
-
-  // verification: {
-  //   google: "your-google-verification-code", // TODO: Replace with actual Google verification code
-  // },
+  verification: {
+    google: "",
+    yandex: "",
+  },
 };
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className={geist.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <StructuredData />
         <Script
@@ -118,7 +135,34 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body
+        className={cn(
+          "bg-background relative min-h-screen font-sans antialiased",
+          geist.variable,
+          geistMono.variable,
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <TooltipProvider delayDuration={0}>
+            <div className="absolute inset-0 top-0 right-0 left-0 z-0 h-[100px] overflow-hidden">
+              <FlickeringGrid
+                className="h-full w-full"
+                squareSize={2}
+                gridGap={2}
+                style={{
+                  maskImage: "linear-gradient(to bottom, black, transparent)",
+                  WebkitMaskImage:
+                    "linear-gradient(to bottom, black, transparent)",
+                }}
+              />
+            </div>
+            <div className="relative z-10 mx-auto max-w-2xl px-6 py-12 pb-24 sm:py-24">
+              {children}
+            </div>
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
