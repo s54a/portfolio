@@ -45,7 +45,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="text-blue-500 underline-offset-4 hover:underline"
           >
-            X (Twitter) @s54a__
+            X/s54a__
           </Link>
         </p>
 

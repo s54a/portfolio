@@ -1,19 +1,17 @@
-import Link from "next/link";
-
 export function CreditsSection() {
   return (
     <section className="text-muted-foreground mt-24 text-center text-sm">
       <p>
         Built using the{" "}
         <a
-          href="https://magicui.design"
+          href="https://magicui.design/docs/templates/portfolio"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-foreground underline"
         >
-          Magic UI
+          Magic UI Portfolio Template
         </a>{" "}
-        portfolio template by{" "}
+        by{" "}
         <a
           href="https://github.com/dillionverma"
           target="_blank"

@@ -25,10 +25,10 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                className="text-muted-foreground max-w-150 md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -36,7 +36,8 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="ring-muted size-24 rounded-full border shadow-lg ring-4 md:size-32">
                 {/* <AvatarImage alt={DATA.name} src={DATA.avatarUrl} /> */}
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                {/* <AvatarFallback>{DATA.initials}</AvatarFallback> */}
+                <AvatarFallback>{"s54a"}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
