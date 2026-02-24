@@ -34,7 +34,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="ring-muted size-24 rounded-full border shadow-lg ring-4 md:size-32">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                {/* <AvatarImage alt={DATA.name} src={DATA.avatarUrl} /> */}
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -70,10 +70,7 @@ export default function Page() {
           </BlurFade>
           <div className="flex flex-col gap-8">
             {DATA.education.map((education, index) => (
-              <BlurFade
-                key={education.school}
-                delay={BLUR_FADE_DELAY * 8 + index * 0.05}
-              >
+              <BlurFade key={index} delay={BLUR_FADE_DELAY * 8 + index * 0.05}>
                 <Link
                   href={education.href}
                   target="_blank"
