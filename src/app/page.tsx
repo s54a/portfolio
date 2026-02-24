@@ -10,7 +10,7 @@ import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
-import { CreditsSection } from "@/components/CreditsSection";
+import { CreditsSection } from "@/components/section/CreditsSection";
 
 const BLUR_FADE_DELAY = 0.04;
 
