@@ -3,7 +3,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Sooraj Gupta",
-  initials: "SG",
+  initials: "s54a",
   url: "https://s54a.in",
   location: "Jabalpur, India",
   locationLink: "https://www.google.com/maps/place/jabalpur",
@@ -11,7 +11,7 @@ export const DATA = {
     "Full Stack Engineer specializing in Next.js, TypeScript, and scalable backend systems. Experienced in building production-ready web applications.",
   summary:
     "Full Stack Engineer with hands-on experience building and deploying end-to-end web applications using Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB.\n\nStrong background in API design, authentication (JWT, RBAC, OTP), payment gateway integration (Razorpay), performance optimization, and scalable system architecture. I’ve built CRM platforms, CMS systems, billing and invoicing tools, eCommerce solutions, and role-based dashboards handling real business transactions.\n\nExperienced in designing secure payment workflows, webhook handling, data migrations at scale, and deploying production systems on cloud infrastructure. Comfortable owning features from requirements to deployment in fast-paced product environments.",
-  avatarUrl: "/og.png",
+  avatarUrl: "https://avatars.githubusercontent.com/u/90983736?v=4",
   skills: [
     { name: "Next.js" },
     { name: "Typescript" },
