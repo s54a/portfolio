@@ -113,20 +113,19 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "OBGYN Prep",
+      title: "OBGYN Prep Platform",
       href: "https://obgynprep.store",
-      dates: "2025 - Present",
+      dates: "Dec 2025 - Jun 2026",
       active: true,
       description:
-        "Built an ed-tech platform with separate admin and client web apps, Razorpay course purchases, OTP authentication, presigned S3 upload architecture, Express/MongoDB backend, and a React Native iOS app accepted on the App Store.",
+        "Built and maintain a full-stack ed-tech platform with separate admin and student web applications, Razorpay payment integration, OTP-based authentication, presigned S3 uploads, course management, and an Express/MongoDB backend powering the entire ecosystem.",
       technologies: [
         "React",
         "TypeScript",
-        "React Native",
         "Node.js",
         "Express",
         "MongoDB",
-        "S3",
+        "AWS S3",
         "Razorpay",
         "OTP Auth",
         "TailwindCSS",
@@ -141,24 +140,19 @@ export const DATA = {
       image: "/projects/obgynprep.webp",
     },
     {
-      title: "OBGYN Prep IOS App",
-      href: "https://obgynprep.store",
-      dates: "December 2025 - June 2026",
-      active: true,
+      title: "OBGYN Prep iOS App",
+      href: "https://apps.apple.com/in/app/obgyn-prep/id6754720569",
+      dates: "Dec 2025 - Jun 2026",
+      active: false,
       description:
-        "Built an ed-tech platform with separate admin and client web apps, Razorpay course purchases, OTP authentication, presigned S3 upload architecture, Express/MongoDB backend, and a React Native iOS app accepted on the App Store.",
+        "Developed and shipped the companion React Native iOS application, implementing authentication, course access, video/content consumption flows, API integration, and App Store release requirements resulting in successful App Store approval.",
       technologies: [
-        "React",
-        "TypeScript",
         "React Native",
+        "TypeScript",
         "iOS",
         "Node.js",
         "Express",
         "MongoDB",
-        "S3",
-        "Razorpay",
-        "OTP Auth",
-        "TailwindCSS",
       ],
       links: [
         {
@@ -172,7 +166,7 @@ export const DATA = {
     {
       title: "Raeeth eCommerce Platform",
       href: "https://raeeth.in",
-      dates: "2025 - Present",
+      dates: "March 2026 - June 2026",
       active: true,
       description:
         "Building a streetwear eCommerce platform using a Turborepo monorepo with product variants, cart, order flow, admin analytics, Google/email/WhatsApp OTP login, Better Auth, PostgreSQL schema design, and Razorpay payments.",
@@ -228,7 +222,7 @@ export const DATA = {
     {
       title: "CRM System",
       href: "https://crm.s54a.in",
-      dates: "Dec 2024 - May 2026",
+      dates: "Dec 2024 - Feb 2025",
       active: true,
       description:
         "Developed real-estate CRM platforms for Century Group, Krishnashray, and Business Culture with role-based agent/admin dashboards, inquiry CRUD, follow-up tracking, analytics charts, dynamic form fields, secure cookie auth, Excel reporting, and internal billing/invoicing workflows.",
@@ -284,7 +278,7 @@ export const DATA = {
     {
       title: "Cinematic Akash Portfolio CMS",
       href: "https://cinematicakash.in",
-      dates: "2025",
+      dates: "Agust 2025 - September 2025",
       active: true,
       description:
         "Built a Next.js SSG portfolio with an SSR-powered CMS, TOTP-secured admin login, Cloudinary presigned uploads, editable video/image content, and one-click redeploy for static public pages.",
